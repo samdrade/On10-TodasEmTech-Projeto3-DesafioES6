@@ -41,10 +41,14 @@ Neste projeto, você e sua dupla criará uma aplicação de pesquisa que usa a A
     - Descrição
     - Linguagem utilizada
     - Total de estrelas
+- [ ] O usuário deve receber um alerta caso usuário não tenha repositórios públicos  
 
 **Exemplo**: 
 <p align="center">
   <img src="./images/profile-repos.png" />
+</p>
+<p align="center">
+  <img src="./images/repos-nao-encontrado.png" />
 </p>
 
 ## Como vou entregar o projeto?
