@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>
+                <span class="titulo1">Github</span>
+                Search
+            </h1>
+            <form id="form">
+                <input type="text" name="nomedeUsuario" id="usuario" placeholder="Digite o usuário">
+                <button type="submit" value="Pesquisar" id="input" onclick="getApi()"><span class="material-icons">
+                    search
+                    </span>
+                 </button>
+            </form>
+        </div>
+    </header>
+    <main style="display: none;" id="main">
+        <img src="" alt="foto de perfil do usuário" id="fotoDoPerfil">
+        <h1 id="nomeDaPessoa">
+         
+        </h1>
+        <p id="nomeDeUsuario">
+
+        </p>
+        <p id="descricaoDoPerfil">
+
+        </p>
+        <div>
+            <p id="seguidores">                
+            </p>
+            <img class = "imgSeguidores" src="https://img-premium.flaticon.com/png/512/748/748004.png?token=exp=1622314497~hmac=80a7abbb5267e785da5d29229b790d06" alt="seguidores">
+        </div>
+        <div>
+            <p id="repositorios">                
+            </p>
+            <img class="imgRepositorios" src="https://image.flaticon.com/icons/png/512/171/171322.png" alt="repositorios">
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>
+                <span>
+
+                </span>
+            </p>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>
