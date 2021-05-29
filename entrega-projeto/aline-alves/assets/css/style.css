@@ -1,0 +1,65 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 71px;
+    height: 66px;
+    margin-left: 5px;
+}
+
+#tituloInicial {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#pesquisa {
+    width:300px;
+    height:42px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #bebebe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nomeUsuario{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size:14px;
+    height:18px;
+}
+
+#btnBusca{
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    height:14px;
+    border: none;
+    outline: none;
+}
+.main{
+    height: 80vh;
+}
+
+.mensagemErro{
+    display:block;
+}
+
+#footer{
+    text-align: center;
+    color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    font-weight: bold;
+}
