@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: "Quicksand";
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    background-color: #E5E5E5;
+  }
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    padding: 1%;
+}
+
+.foto {
+    height: 35vh;
+    border-radius: 10%;
+}
+
+main {
+    margin: 30%;
+}
+
+h1 {
+    background-color: white;
+}
+
+form {
+    background-color: white;
+}
+
+.footer {
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+}
