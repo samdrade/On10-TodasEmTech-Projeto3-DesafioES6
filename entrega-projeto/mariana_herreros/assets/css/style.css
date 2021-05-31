@@ -1,0 +1,63 @@
+ .navegacao {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+
+
+ .container-input {
+     border: 1px solid black;
+     width: 400px;
+     height: 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 8px;
+ }
+
+ .input {
+     border: none;
+     outline: none;
+     width: 100%;
+     padding: 8px;
+ }
+
+ .btn {
+     background-color: transparent;
+     border: none;
+ }
+
+ .container {
+     display: flex;
+     justify-content: center;
+     background-color:#ece8e8;
+     font-family: 'Quicksand', sans-serif;
+     font-size: 32px;
+     color:  #EC9B69;
+ }
+
+ .rodape {
+     font-family: 'Quicksand', sans-serif;
+     font-size: 14px;
+     line-height: 17.5px;
+     margin: 15px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .nome{
+     color: #EC9B69;
+     font-weight: bold;
+ }
+
+ /* @media (min-width: 375px) {
+   
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+  
+
+ } */
