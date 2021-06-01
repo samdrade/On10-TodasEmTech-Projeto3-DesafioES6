@@ -23,57 +23,58 @@ form.addEventListener('submit', (event) => {
   }
 })
 
-console.log("oi")
-// function replaceNome(nome){
-//   let nomeModificado = ''
+function replaceNome(nome){
+  let nomeModificado = ''
 
-//   if(nome.includes(' ')){
-//    nomeModificado = nome.replace(' ', '+')
-//   } else {
-//    nomeModificado = nome;
-//   }
+  if(nome.includes(' ')){
+   nomeModificado = nome.replace(' ', '+')
+  } else {
+   nomeModificado = nome;
+  }
 
-//   return nomeModificado.toLocaleLowerCase();
-// }
+  return nomeModificado.toLocaleLowerCase();
+}
 
+// avatar_url, login, name, bio, followers, public_repos
 
+const getUsuario = (nome) => {
 
-// const getUsuario = (nome) => {
+  const nomeModificado = replaceNome(nome)
 
-//   const nomeModificado = replaceNome(nome)
+  fetch(`${baseURL}/users/${nomeModificado}`)
+  .then((resposta) => resposta.json())
+  .then((dados) => {console.log(dados)
+    mensagemErro.textContent = '';
+  
+    const avatar_url = dados.avatar_url;
+    const login = dados.login;
+    const name = dados.name;
+    const bio = dados.bio;
+    const followers = dados.followers;
+    const public_repos = dados.public_repos;
 
-//   fetch(`${baseURL}/characters?name=${nomeModificado}`)
-//   .then((resposta) => resposta.json())
-//   .then((dados) => {
-//     mensagemErro.textContent = '';
-//     if(dados.length > 0){
+    criarCard(avatar_url, login, name, bio, followers, public_repos)
+   
+  }).catch(() => {
+    limparCard();
+    mensagemErro.textContent = 'Personagem não encontrado';
+  })
 
-//     const personagem = dados[0];
-//     const { img, nickname, birthday, name } = personagem;
-//     criarCard(img, nickname, birthday, name)
-//     } else {
-//       throw new Error()
-//     }
-//   }).catch(() => {
-//     limparCard();
-//     mensagemErro.textContent = 'Personagem não encontrado';
-//   })
+}
 
-// }
+const criarCard = (avatar_url, login, name, bio, followers, public_repos) => {
+ imgPersonagem.setAttribute('src', img);
+ // imgPersonagem.src = img
+ nomeUsuario.textContent = name;
+ // nomePersonagem.innerText = nome;
 
-// const criarCard = (img, nome, apelido, niver) => {
-//  imgPersonagem.setAttribute('src', img);
-//  // imgPersonagem.src = img
-//  nomePersonagem.textContent = nome;
-//  // nomePersonagem.innerText = nome;
+ apelidPersonagem.textContent = `Nome: ${name}`;
+ niverPersonagem.textContent = `Nome usuário: ${login}`;
+}
 
-//  apelidPersonagem.textContent = `Apelido: ${apelido}`;
-//  niverPersonagem.textContent = `Aniversário: ${niver}`;
-// }
-
-// const limparCard = () => {
-//   imgPersonagem.src = ' ';
-//  nomePersonagem.textContent = '';
-//  apelidPersonagem.textContent = '';
-//  niverPersonagem.textContent = '';
-// }
+const limparCard = () => {
+  imgPersonagem.src = ' ';
+ nomePersonagem.textContent = '';
+ apelidPersonagem.textContent = '';
+ niverPersonagem.textContent = '';
+}
