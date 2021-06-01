@@ -1,5 +1,5 @@
 // URL da API
-const baseURL = "https://www.breakingbadapi.com/api";
+const baseURL = "https://api.github.com";
 
 const form = document.querySelector('form');
 const input = document.querySelector('#nomePersonagem');
@@ -22,6 +22,7 @@ form.addEventListener('submit', (event) => {
   }
 })
 
+
 function replaceNome(nome){
   let nomeModificado = ''
 
@@ -40,7 +41,7 @@ const getPersonagem = (nome) => {
 
   const nomeModificado = replaceNome(nome)
 
-  fetch(`${baseURL}/characters?name=${nomeModificado}`)
+  fetch(`${baseURL}/users/${nomeModificado}`)
   .then((resposta) => resposta.json())
   .then((dados) => {
     mensagemErro.textContent = '';

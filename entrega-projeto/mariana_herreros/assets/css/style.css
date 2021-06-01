@@ -4,7 +4,6 @@
      margin-bottom: 10px;
  }
 
-
  .container-input {
      border: 1px solid black;
      width: 400px;
@@ -30,10 +29,10 @@
  .container {
      display: flex;
      justify-content: center;
-     background-color:#ece8e8;
+     background-color: #ece8e8;
      font-family: 'Quicksand', sans-serif;
      font-size: 32px;
-     color:  #EC9B69;
+     color: #EC9B69;
  }
 
  .rodape {
@@ -45,19 +44,44 @@
      justify-content: center;
  }
 
- .nome{
+ .nome {
      color: #EC9B69;
      font-weight: bold;
  }
 
- /* @media (min-width: 375px) {
-   
-    .navegacao {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        max-width: 100%;
-    }
-  
+ @media (max-width: 768px) {
+     .logo-git {
+         height: 30px;
+     }
+ }
 
- } */
+ @media (max-width: 375px) {
+     .logo-git {
+         height: 30px;
+     }
+     .container-input {
+         width: 150px;
+         height: 40px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         border-radius: 8px;
+     }
+     .input {
+         border: none;
+         outline: none;
+         width: 60%;
+         padding: 8px;
+     }
+     .mensagem_erro {
+         display: flex;
+         justify-content: center;
+         width: 50px;
+         height: 500px;
+         margin-right: 40px;
+     }
+     .rodape {
+         padding: 0;
+         margin-bottom: auto;
+     }
+ }
