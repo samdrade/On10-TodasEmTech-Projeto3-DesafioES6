@@ -1,90 +1,104 @@
 
-const baseURL = "https://api.github.com";
+// URL da API
+const baseURL = "https://www.breakingbadapi.com/api";
 
 const form = document.querySelector('form');
 const input = document.querySelector('#nomePersonagem');
 
 const imgPersonagem = document.querySelector('#imagem');
-const nomePersonagem = document.querySelector('#name');
+const nomePersonagem = document.querySelector('#nome');
 const apelidPersonagem = document.querySelector('#apelido');
 const niverPersonagem = document.querySelector('#niver');
 const mensagemErro = document.querySelector('.messagemErro');
 
 
 form.addEventListener('submit', (event) => {
-event.preventDefault();
-const nome = input.value.trim();
+  event.preventDefault();
+  const nome = input.value.trim();
 
-if(nome){
-getPersonagem(nome)
-} else {
-alert('Informe o nome do personagem');
-}
+  if(nome){
+    getPersonagem(nome)
+  } else {
+    alert('Informe o nome do personagem');
+  }
 })
 
+
 function replaceNome(nome){
-let nomeModificado = ''
+  let nomeModificado = ''
 
-if(nome.includes(' ')){
-nomeModificado = nome.replace(' ', '+')
-} else {
-nomeModificado = nome;
-}
+  if(nome.includes(' ')){
+   nomeModificado = nome.replace(' ', '+')
+  } else {
+   nomeModificado = nome;
+  }
 
-return nomeModificado.toLocaleLowerCase();
+  return nomeModificado.toLocaleLowerCase();
 }
 
 
 
 const getPersonagem = (nome) => {
 
-const nomeModificado = replaceNome(nome)
+  const nomeModificado = replaceNome(nome)
 
-fetch(`${baseURL}/users/${nomeModificado}`)
-.then((resposta) => resposta.json())
-.then((dados) => {
+  fetch(`${baseURL}/characters?name=${nomeModificado}`)
+  .then((resposta) => resposta.json())
+  .then((dados) => {
+    mensagemErro.textContent = '';
+    if(dados.length > 0){
 
-  if(dados.message == "Not Found") {
-    throw new Error()
-  }
-
-  else {
-  mensagemErro.textContent = '';
-
-  const avatar_url = dados.avatar_url;
-
-  const name = dados.name;
-
-  const followers = dados.followers;
-
-  const bio = dados.bio;
-
-  criarCard(avatar_url, name, followers, bio)
-};
-
-//name login followers bio
-
-}).catch(() => {
-limparCard();
-mensagemErro.textContent = 'Usuário não encontrado';
-})
+    const personagem = dados[0];
+    const { img, nickname, birthday, name } = personagem;
+    criarCard(img, nickname, birthday, name)
+    } else {
+      throw new Error()
+    }
+  }).catch(() => {
+    limparCard();
+    mensagemErro.textContent = 'Personagem não encontrado';
+  })
 
 }
 
+const criarCard = (img, nome, apelido, niver) => {
+ imgPersonagem.setAttribute('src', img);
+ // imgPersonagem.src = img
+ nomePersonagem.textContent = nome;
+ // nomePersonagem.innerText = nome;
 
-const criarCard = (avatar_url, name, followers, bio) => {
-imgPersonagem.setAttribute('src', avatar_url);
-// imgPersonagem.src = img
-nomePersonagem.textContent = name;
-// nomePersonagem.innerText = nome;
-
-apelidPersonagem.textContent = `Nome: ${name}`;
-niverPersonagem.textContent = `Bio: ${bio}`;
+ apelidPersonagem.textContent = `Apelido: ${apelido}`;
+ niverPersonagem.textContent = `Aniversário: ${niver}`;
 }
 
 const limparCard = () => {
-imgPersonagem.src = ' ';
-nomePersonagem.textContent = '';
-apelidPersonagem.textContent = '';
-niverPersonagem.textContent = '';
+  imgPersonagem.src = ' ';
+ nomePersonagem.textContent = '';
+ apelidPersonagem.textContent = '';
+ niverPersonagem.textContent = '';
 }
+
+
+/*
+const exemploPokemon = () => {
+  fetch('https://pokeapi.co/api/v2/pokemon/banana')
+  .then((resposta) => {
+
+  
+   // if(resposta.ok === false){
+     throw new Error();
+    }
+  //
+
+    if (!resposta.ok) {
+      throw new Error();
+    } 
+  
+    return resposta.json();
+  })
+  .then(json => console.log(json))
+  .catch(() => console.log('Pokemon não encontrado'));
+}
+
+exemploPokemon();
+*/

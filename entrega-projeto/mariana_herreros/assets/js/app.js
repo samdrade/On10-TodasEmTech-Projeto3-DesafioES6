@@ -1,80 +1,103 @@
 const baseURL = "https://api.github.com";
-
 const form = document.querySelector('form');
-const input = document.querySelector('#usuario');
 
-const imgAvatar = document.querySelector('#imagem');
-const nomeUsuario = document.querySelector('#nome');
-const usarname = document.querySelector('#username');
-const bio = document.querySelector('#bio');
-const totalSeguidores = document.querySelector('#totalSeguidores');
-const totalRepositorios = document.querySelector('#totalRepositorios');
-const mensagemErro = document.querySelector('.messagemErro');
+const input = document.querySelector('#nomePersonagem');
+
+const imgUsuario = document.querySelector('#imagem');
+
+const nomeUsuario = document.querySelector('#name');
+
+const loginUsuario = document.querySelector('#login')
+
+const bioUsuario = document.querySelector('#bio');
+
+const seguidoresUsuario = document.querySelector('#followers');
+
+const repUsuario = document.querySelector('#public_repos');
+
+const span1 = document.getElementById('span1');
+
+const span2 = document.getElementById('span2');
+
+const mensagemErro = document.querySelector('.mensagemErro');
 
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const nome = input.value.trim();
+event.preventDefault();
+const nome = input.value.trim();
 
-  if(nome){
-    getUsuario(nome)
-  } else {
-    alert('Informe o nome do usuário');
-  }
+if(nome){
+getUsuario(nome)
+} else {
+alert('Informe o nome do usuário');
+}
 })
 
 function replaceNome(nome){
-  let nomeModificado = ''
+let nomeModificado = ''
 
-  if(nome.includes(' ')){
-   nomeModificado = nome.replace(' ', '+')
-  } else {
-   nomeModificado = nome;
-  }
-
-  return nomeModificado.toLocaleLowerCase();
+if(nome.includes(' ')){
+nomeModificado = nome.replace(' ', '+')
+} else {
+nomeModificado = nome;
 }
-
-// avatar_url, login, name, bio, followers, public_repos
+return nomeModificado.toLocaleLowerCase();
+}
 
 const getUsuario = (nome) => {
 
-  const nomeModificado = replaceNome(nome)
+const nomeModificado = replaceNome(nome)
 
-  fetch(`${baseURL}/users/${nomeModificado}`)
-  .then((resposta) => resposta.json())
-  .then((dados) => {console.log(dados)
-    mensagemErro.textContent = '';
-  
-    const avatar_url = dados.avatar_url;
-    const login = dados.login;
-    const name = dados.name;
-    const bio = dados.bio;
-    const followers = dados.followers;
-    const public_repos = dados.public_repos;
+fetch(`${baseURL}/users/${nomeModificado}`)
+.then((resposta) => resposta.json())
+.then((dados) => {
 
-    criarCard(avatar_url, login, name, bio, followers, public_repos)
-   
-  }).catch(() => {
-    limparCard();
-    mensagemErro.textContent = 'Personagem não encontrado';
-  })
+  if(dados.message == "Not Found") {
+    throw new Error()
+  }
 
+  else {
+  mensagemErro.textContent = '';
+
+  const avatar_url = dados.avatar_url;
+
+  const name = dados.name;
+
+  const login = dados.login;
+
+  const bio = dados.bio;
+
+  const followers = dados.followers;
+
+  const public_repos = dados.public_repos;
+
+  criarCard(avatar_url, name, login, bio, followers, public_repos)
 }
 
-const criarCard = (avatar_url, login, name, bio, followers, public_repos) => {
- imgPersonagem.setAttribute('src', img);
- // imgPersonagem.src = img
- nomeUsuario.textContent = name;
- // nomePersonagem.innerText = nome;
+}).catch(() => {
+limparCard()
+mensagemErro.innerHTML = '<img src="https://raw.githubusercontent.com/Maridh/On10-TodasEmTech-Projeto3-DesafioES6/mariana_herreros/entrega-projeto/mariana_herreros/assets/img/erro.png">';
+})
+}
 
- apelidPersonagem.textContent = `Nome: ${name}`;
- niverPersonagem.textContent = `Nome usuário: ${login}`;
+const criarCard = (avatar_url, name, login, bio, followers, public_repos) => {
+imgUsuario.setAttribute('src', avatar_url);
+nomeUsuario.textContent = name;
+loginUsuario.textContent = `${login}`;
+bioUsuario.textContent = `${bio}`;
+seguidoresUsuario.textContent = `${followers}`;
+repUsuario.textContent = `${public_repos}`;
+span1.innerText = 'people_outline'
+span2.innerText = 'library_books'
 }
 
 const limparCard = () => {
-  imgPersonagem.src = ' ';
- nomePersonagem.textContent = '';
- apelidPersonagem.textContent = '';
- niverPersonagem.textContent = '';
+imgUsuario.src = ' ';
+nomeUsuario.textContent = '';
+loginUsuario.textContent = '';
+bioUsuario.textContent = '';
+seguidoresUsuario.textContent = '';
+repUsuario.textContent = '';
+span1.innerText = '';
+span2.innerText = '';
 }

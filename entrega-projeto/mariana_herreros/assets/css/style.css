@@ -1,87 +1,149 @@
- .navegacao {
-     display: flex;
-     justify-content: space-between;
-     margin-bottom: 10px;
- }
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
- .container-input {
-     border: 1px solid black;
-     width: 400px;
-     height: 40px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     border-radius: 8px;
- }
+.container-input {
+    border: 1px solid black;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+}
 
- .input {
-     border: none;
-     outline: none;
-     width: 100%;
-     padding: 8px;
- }
+.input {
+    border: none;
+    outline: none;
+    width: 20%;
+    padding: 8px;
+}
 
- .btn {
-     background-color: transparent;
-     border: none;
- }
+.btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 300px;
+}
 
- .container {
-     display: flex;
-     justify-content: center;
-     background-color: #ece8e8;
-     font-family: 'Quicksand', sans-serif;
-     font-size: 32px;
-     color: #EC9B69;
- }
 
- .rodape {
-     font-family: 'Quicksand', sans-serif;
-     font-size: 14px;
-     line-height: 17.5px;
-     margin: 15px;
-     display: flex;
-     justify-content: center;
- }
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #ece8e8;
+    font-family: 'Quicksand', sans-serif;
+    color: #EC9B69;
+    height: 900px;
+    width: 100%;
+}
 
- .nome {
-     color: #EC9B69;
-     font-weight: bold;
- }
+#imagem {
+    display: flex;
+    justify-self: center;
+    width: 252px;
+    border-radius: 8px;
+    margin-top: 100px;
+}
 
- @media (max-width: 768px) {
-     .logo-git {
-         height: 30px;
-     }
- }
+#login {
+    font-weight: bold;
+    font-size: 14px;
+    color: #313131;
+}
 
- @media (max-width: 375px) {
-     .logo-git {
-         height: 30px;
-     }
-     .container-input {
-         width: 150px;
-         height: 40px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         border-radius: 8px;
-     }
-     .input {
-         border: none;
-         outline: none;
-         width: 60%;
-         padding: 8px;
-     }
-     .mensagem_erro {
-         display: flex;
-         justify-content: center;
-         width: 50px;
-         height: 500px;
-         margin-right: 40px;
-     }
-     .rodape {
-         padding: 0;
-         margin-bottom: auto;
-     }
- }
+#bio {
+    color: #313131;
+    width: 300px;
+}
+
+#followers, #public_repos {
+    color: #313131;
+    font-weight: bold;
+}
+
+.divisoes {
+    display: flex;
+    align-items: center;
+}
+
+.sub-divisao1, .sub-divisao2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 66px;
+    height: 40px;
+    border-radius: 6px;
+    margin-right: 10px;
+    /* background-color: white; */
+}
+
+#span1, #span2 {
+    margin-right: 10px;
+    
+}
+
+.rodape {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 17.5px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.by {
+    font-weight: bold;
+    color: #EC9B69;
+}
+
+
+
+/* @media (max-width: 768px) {
+    .logo-git {
+        height: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo-git {
+        height: 30px;
+    }
+
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        margin-right: 22px;
+    }
+    .container-input {
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .input {
+        border: none;
+        outline: none;
+        width: 60%;
+        padding: 0px;
+        margin-top: 5px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+  
+    
+    .rodape {
+        padding: 0;
+        margin-bottom: auto;
+    }
+} */
