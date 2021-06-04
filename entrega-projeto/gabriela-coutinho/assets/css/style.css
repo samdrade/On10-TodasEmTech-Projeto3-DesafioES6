@@ -1,0 +1,144 @@
+css
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
+  text-align: justify;   
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 8px;
+}
+
+body{
+  background-color: #E5E5E5;
+}
+.header {
+  position: absolute;
+  width: 100%;
+  height: 66px;
+  left: 0px;
+  top: 0px;    
+  background: #FFFFFF;
+}
+
+.title {
+  width: 207px;
+  height: 40px;
+  left: 13px;
+  top: 13px;    
+  font-family: Quicksand;
+  color:#EC9B69;
+}
+
+.title__strong{
+  width: 207px;
+  height: 40px;
+  left: 13px;
+  top: 13px;    
+  font-family: Quicksand;
+  color: #313131;
+}
+ .input__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 11px;  
+  position: absolute;
+  width: 403px;
+  height: 42px;
+  left: 968px;
+  top: 13px;
+ }
+ input{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px;
+ }
+ 
+ .btn__search {
+  background: #FFFFFF;
+  border: 1px solid #BEBEBE;
+  box-sizing: border-box;
+  border-radius: 8px;
+ }
+
+.messageUserErro{
+  position: absolute;
+  width: 628px;
+  height: 720px;
+  left: 422px;
+  top: 175px;
+}
+
+.messageUserErro__title{
+  color: #EC9B69;
+  position: absolute;
+  left: 32.29%;
+  right: 29.86%;
+  top: 17.09%;
+  bottom: 71.19%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.messageUserErro__paragraph{  
+  color: #313131;
+  opacity: 0.5;
+  position: absolute;
+  left: 40.14%;
+  right: 37.71%;
+  top: 23.14%;
+  bottom: 72.95%;
+}
+#search{
+  background: #FFFFFF;
+  border: 1px solid #BEBEBE;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+  /* --- FOOTER --- */
+  
+  .footer {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    left: 0px;
+    top: 958px;    
+    background: #FFFFFF; 
+    bottom: 0;
+  }  
+
+  .paragraph{   
+    position: static;
+    left: 0%;
+    right: 45.93%;
+    top: 0%;
+    bottom: 0%;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #313131;
+    opacity: 0.5;
+  }
+
+  .link{
+    position: static;
+    left: 55.98%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EC9B69;
+
+  }

@@ -1,5 +1,5 @@
 // URL da API
-const baseURL = "https://www.breakingbadapi.com/api";
+const baseURL = "https://api.github.com/users/gabrielacsalesc";
 
 const form = document.querySelector('form');
 const input = document.querySelector('#nomePersonagem');
