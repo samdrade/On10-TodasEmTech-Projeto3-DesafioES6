@@ -1,0 +1,162 @@
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-input {
+    border: 1px solid black;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    width: 20%;
+    padding: 8px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 300px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #ece8e8;
+    font-family: 'Quicksand', sans-serif;
+    color: #EC9B69;
+    height: 900px;
+    width: 100%;
+}
+
+#imagem {
+    display: flex;
+    justify-self: center;
+    width: 252px;
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+#login {
+    font-weight: bold;
+    font-size: 14px;
+    color: #313131;
+}
+
+#bio {
+    color: #313131;
+    width: 300px;
+}
+
+#followers,
+#public_repos {
+    color: #313131;
+    font-weight: bold;
+}
+
+.divisoes {
+    display: flex;
+    align-items: center;
+}
+
+.sub-divisao1,
+.sub-divisao2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 66px;
+    height: 40px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#span1,
+#span2 {
+    margin-right: 10px;
+
+}
+
+.rodape {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 17.5px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.by {
+    color: #9a9a9a;
+    background-color: transparent;
+}
+
+
+
+@media only screen and (max-width: 460px)
+
+/* @media (max-width: 420px) */
+    {
+    .logo-git {
+        height: 30px;
+    }
+
+    .logo-git {
+        height: 30px;
+    }
+
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        margin-right: 22px;
+    }
+
+    .container-input {
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .input {
+        border: none;
+        outline: none;
+        width: 60%;
+        padding: 0px;
+        margin-top: 5px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+
+
+    .rodape {
+        padding: 0;
+        margin-bottom: auto;
+    }
+
+    #imagem {
+        display: flex;
+        justify-self: center;
+        width: 252px;
+        border-radius: 8px;
+        margin-top: 100px;
+    }
+}
