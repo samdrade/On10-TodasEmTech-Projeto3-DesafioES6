@@ -1,0 +1,179 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #e5e5e5;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    background-color: #fff;
+    padding: 2px 10px;
+}
+
+.tituloInicial {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.tituloInicial span {
+    color: #ec9b69;
+}
+
+.pesquisa {
+    width:300px;
+    height:42px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #bebebe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.nomeUsuario{
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size:14px;
+    height:18px;
+}
+
+.botao{
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    height: 14px;
+    border: none;
+    outline: none;
+}
+.main{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.mensagemErro{
+    display:block;
+}
+
+.card__user{
+    color:#313131;
+    background-color: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user__card{
+    width: 252px;
+}
+
+.user__name {
+    color:#ec9b69;
+}
+
+.user__username {
+    font-weight: bold;
+}
+
+.icon__profile {
+    color: #ec9b69;
+}
+
+.followersRepos {
+display: flex;
+flex-direction: row;
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.badges {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.followers {
+    background-color: white;
+    height: 35px;
+    width: 50px;
+    text-align: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.userRepos {
+    background-color: white;
+    height: 35px;
+    width: 50px;
+    text-align: center;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+.user__image {
+    width: 252px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.tituloNaoEncontrado{
+color: #ec9b69;
+font-size: 48px;
+margin-bottom: 0px;
+}
+
+.pesquiseNovamente {
+    color: #999898;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 0px;
+}
+
+.imagemNaoEncontrado {
+margin-top: 0px;
+}
+
+.footer{
+    text-align: center;
+    color: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.footer span {
+    color: #ec9b69;
+    margin-left:9px;
+}
+
+footer span{
+    font-weight: bold;
+}
