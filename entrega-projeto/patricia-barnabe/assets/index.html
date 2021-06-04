@@ -13,19 +13,25 @@
 </head>
 <body>
    <nav class="nav_bar">
-        <section class="titulo">
-            <h1 class="titulo1">Github</h1>
-            <h1 class="titulo2">Search</h1>
+        <section>
+            <a class="titulo" href="/entrega-projeto/patricia-barnabe/assets/index.html">
+               <h1 class="titulo1">Github</h1>
+               <h1 class="titulo2">Search</h1>
+            </a>
         </section>
 
        <form class="container_input">
-            <input class="input" type="text" action="" placeholder="Digite o usuário..." required>
+            <input class="input" type="text" action="" placeholder="Digite o usuário..." onfocus="this.value=''" required>
             <button class="btn" type="submit"> 
                 <span class="material-icons lupa"> search </span>
             </button>
        </form>
    </nav> 
    
+   <section class="home">
+        <img class="github" src="img/github.png" alt="Github Search">
+    </section>
+
    <main>
        <section class="profile">
         <!-- Alternativa para template criado no HTML
@@ -38,11 +44,12 @@
         -->
        </section>
 
-       <!-- <section class="search_off">
-           <h2 class="texto1"></h2>
+       <section class="search_off">
+           <!-- Alternativa para template criado no HTML
+            <h2 class="texto1"></h2>
            <h3 class="texto2"></h3>
-           <img class="not_found">
-       </section> -->
+           <img class="not_found"> -->
+       </section> 
    </main>
 
    <footer>
