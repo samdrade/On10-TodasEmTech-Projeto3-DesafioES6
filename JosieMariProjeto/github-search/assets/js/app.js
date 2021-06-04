@@ -1,3 +1,4 @@
+//API
 const baseURL = "https://api.github.com";
 
 const form = document.querySelector('form');
