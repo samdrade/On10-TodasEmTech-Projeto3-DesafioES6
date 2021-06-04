@@ -7,20 +7,28 @@
     overflow: hidden;
   }
 
-main {
-   text-align: center;
-}
-
 body {
     background-color: #E5E5E5;
+}
+
+.profile {
+    text-align: center;
 }
 
 .footer {
     background-color: white;
     text-align: center;
     padding: 1%;
-    margin-top: 23%;
     font-size: small;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+.patricia {
+    color:#EC9B69;
 }
 
 .nav_bar {
@@ -33,7 +41,7 @@ body {
 
 .foto {
     height: 35vh;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 .container_input{
@@ -79,3 +87,4 @@ body {
 .nome {
     color: #EC9B69;
 }
+
