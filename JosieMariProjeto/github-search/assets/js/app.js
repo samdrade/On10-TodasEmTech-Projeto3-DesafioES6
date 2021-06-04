@@ -1,4 +1,4 @@
-//API
+//API - Versão refatorada
 const baseURL = "https://api.github.com";
 
 const form = document.querySelector('form');
