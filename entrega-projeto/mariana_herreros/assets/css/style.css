@@ -25,7 +25,6 @@
     margin-left: 300px;
 }
 
-
 .container {
     display: flex;
     justify-content: center;
@@ -38,7 +37,7 @@
 
 #imagem {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     width: 252px;
     border-radius: 8px;
     margin-top: 100px;
@@ -74,12 +73,10 @@
     height: 40px;
     border-radius: 6px;
     margin-right: 10px;
-    /* background-color: white; */
 }
 
 #span1, #span2 {
     margin-right: 10px;
-    
 }
 
 .rodape {
@@ -96,30 +93,74 @@
     color: #EC9B69;
 }
 
-
-
-/* @media (max-width: 768px) {
-    .logo-git {
-        height: 30px;
+@media (max-width: 768px) {
+    .navegacao {
+        margin-bottom: 10px;
+        width: 100%;
     }
+    .container {
+        display: flex;
+        justify-content: center;
+        max-width: 768px;
+    }
+    .container-input {
+        width: 250px;
+        display: flex;
+    }
+    .mensagemErro img {
+        width: 500px;
+        margin-right: 50px;
+    }
+    .input {
+        width: 80%;
+        padding: 0px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    .btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 700px;
+    }
+
+    #imagem {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+
+    .card {
+        margin-left: 70px;
+    }
+
+    .sub-divisao1, .sub-divisao2 {
+        height: 20px;
+    }
+
 }
 
 @media (max-width: 375px) {
     .logo-git {
         height: 30px;
     }
-
     .navegacao {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 5px;
-        margin-right: 22px;
+    }
+    .form {
+        width: 150px;
     }
     .container-input {
-        width: 150px;
+        width: 120px;
         height: 30px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         border-radius: 8px;
     }
@@ -133,17 +174,34 @@
         margin-left: 5px;
         margin-bottom: 15px;
     }
-
     .btn {
         background-color: transparent;
         border: none;
         margin-left: 2px;
         margin-top: 10px;
     }
-  
-    
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 700px;
+    }
     .rodape {
         padding: 0;
         margin-bottom: auto;
     }
-} */
+    .mensagemErro img {
+        width: 300px;
+        margin-right: 70px;
+    }
+    #imagem {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .card {
+        margin-left: 80px;
+    }
+    .sub-divisao1, .sub-divisao2 {
+        height: 20px;
+    }
+}
