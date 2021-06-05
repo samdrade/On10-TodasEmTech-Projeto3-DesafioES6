@@ -31,10 +31,11 @@ const getUser = async (user) => {
         // console.log(userInfos)
     } catch {
         profile.remove();
+        home.remove();
         search_off.innerHTML = notFound();
     }
 
-    input.value = ''
+    input.value = '';
 
 /* Alternativa usando o fetch:
     fetch(`https://api.github.com/users/${user}`)
@@ -79,16 +80,33 @@ const notFound = () => {
     `
 }
 
+// Começo de tentativa da parte extra do projeto 
 const getRepos = (user) => {
     fetch(`https://api.github.com/users/${user}/repos`)
     .then(response => response.json())
     .then(repos)
+    //console.log(response)
 }
 
 
 
 
-
+// const criarListaReposUsuario = (value) => {
+//     let htmlRepo = '';
+//     if (value.length != 0) {
+//         htmlRepo += '<div class="cards">';
+//         for (let i = 0; i < value.length; i++) {
+//         htmlRepo += `<div class="card__repo">
+//                         <h1 class="tituloRepo">${value[i].name}</h1>
+//                         <p class="descricaoRepo">${value[i].description ? value[i].description : ' '}</p> 
+//                     <div class="bolinha">${value[i].language ? value[i].language : ' '}</div>
+//                     <div class="estrelinha">
+//                     <span class="material-icons-outlined">star_border</span>
+//                     ${value[i].forks}</div>
+//                 </div>`;
+//         }
+//         htmlRepo += '</div>';
+//         return htmlRepo;
 
 
 
