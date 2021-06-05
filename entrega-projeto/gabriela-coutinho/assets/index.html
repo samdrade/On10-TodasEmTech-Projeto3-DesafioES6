@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Github Search</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <div>
-        <h1 class="title">GitHub<span class="title__strong">Search</span></h1>
-      </div>
-      <form action="#" class="input__container">
-        <input
-          type="text"
-          id="search"
-          name="search"
-          placeholder="Digite o usuário..."
-        />
-        <button class="btn__search">
-          <span class="material-icons">search</span>
-        </button>
-      </form>
-    </header>
-    <main class="main">
-      <section class="profile">
+<html lang="en">
 
-      </section>
-      <section class="messageUserErro">
-        <h1 class="messageUserErro__title">Usuário não encontrado :(</h1>
-        <p class="messageUserErro__paragraph">Pesquisa novamente</p>
-        <picture>
-         <img class="messageUserErro__img" src="../../../images/not-found.svg" alt="" />
-      </picture>
-      </section>
-      <section class="repos">
-        <ul class="repos__list"></ul>
-        <h2 class="messageReposErro"></h2>
-      </section>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>GithubSearch</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="titulo">
+            <h1 class="logo1">Github<strong class="logo2">Search</strong></h1>
+        </div>
+        <div>
+            <form action="#">
+                <input type="text" placeholder="Digite o usuário..." value="" id="nomeUsuario" />
+                <button class="btn"><span class="material-icons">search</span></button>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <section class="card ">
+            <article class="card_found">
+                <div class="img">
+                    <img id="avatar_url" src="" alt="">
+                </div>
+                <div>
+                    <h1 class="name"></h1>
+                    <h3 class="login"></h3>
+                    <p class="bio"></p>
+                </div>
+                <div class="followers_repo">
+                    <div class="card_followers">
+                        <img src="" alt="" id="people">
+                        <p id="followers"></p>
+                    </div>
+                    <div class="card_repos">
+                        <img src="" alt="" id="class">
+                        <p id="public_repos"></p>
+                    </div>
+                </div>
+            </article>
+            <article id="array_repositorios">
+
+            </article>
+        </section>
+        <section class="card_not_found">
+            <h1 class="title_not_found"></h1>
+            <p class="subtitle_not_found"></p>
+            <img class="img_not_found" src="" alt="">
+        </section>
+
     </main>
-    <footer class="footer">
-      <p class="paragraph">
-        Desenvolvido por <a class="link">Carla e Gabriela Coutinho</a>
-      </p>
+    <footer class="rodape">
+        <p class='rodape-texto'><span>Desenvolvido por </span><span class='rodape-nome-alunas'>Carla e Gabriela Coutinho</span>.</p>
     </footer>
     <script src="./js/app.js" type="module"></script>
-  </body>
-</html>
+</body>
 
+</html>
