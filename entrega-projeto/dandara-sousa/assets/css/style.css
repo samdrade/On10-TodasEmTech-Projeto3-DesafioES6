@@ -1,0 +1,180 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    --main-color: #ec9b69;
+    /*background-color: #ffffff;*/
+    margin: 0;
+    padding: 0;
+
+
+
+}
+.title{
+    font-weight: 700;
+    font-style: bold;
+    font-size: 32px;
+    line-height: 1px;
+    color: var(--main-color);
+    margin-top: 20px;
+    margin-left: 5px;
+
+}
+
+
+.header{
+    display: flex;
+    padding: 1rem 5rem 1rem 1rem;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background: #ffff;
+    align-items: center;
+}
+
+span{
+    color: var(--main-color);
+}
+
+input{
+    margin-right: 1rem;
+    border-radius: 8px;
+    padding: 10px;
+    border: transparent;
+    margin-top: 8px;
+}
+
+.btn{
+    margin-right: 1rem;
+    border-radius: 8px;
+    border: transparent;
+    margin-top: 8px;
+}
+
+.form_container{
+    display: flex;
+
+}
+
+.title-strong{
+    color: black;
+}
+
+.main{
+   width: 100%;
+   height: 80%;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    
+}
+   
+
+footer{
+    background-color: #ffffff;
+    color: rgb(133, 133, 133);
+    position:absolute;
+    /*bottom:0;*/
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:baseline;
+    letter-spacing: 1px;
+
+}
+
+.off{
+    display:none;
+}
+
+.card {
+    display: flex;
+      justify-content: center;
+      /*width: 100%;*/
+      margin: 10px;
+   
+}
+
+.card_found {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    margin: 0 3rem 0 0;
+    min-width: 230px;
+}
+
+#avatar_url {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.name {
+    color: #EC9B69;
+    font-size: 2rem;
+    padding: 0.4rem 0 0.4rem 0;
+}
+
+.login,
+.bio {
+    font-size: 0.9rem;
+    color: #313131;
+    opacity: 0.5;
+    line-height: 17px;
+}
+
+.bio {
+    padding: 0.7rem 0 0.5rem;
+}
+
+.followers_repo,
+.card_followers,
+.card_repos {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    color: #313131;
+}
+
+.card_followers,
+.card_repos {
+    background: #ffff;
+    margin: 0.5rem;
+    border-radius: 10px;
+    
+}
+
+#followers,
+#public_repos {
+    opacity: 0.5;
+    margin: 0.5rem;
+}
+
+
+.card_not_found {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    align-items: center;
+}
+
+.title_not_found {
+    color: #EC9B69;
+    font-size: 2.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.subtitle_not_found {
+    color: #313131;
+    opacity: 0.5;
+    font-size: 2rem;
+}
+
+.img_not_found {
+    width: 100%;
+    max-width: 500px;
+}
+
+
