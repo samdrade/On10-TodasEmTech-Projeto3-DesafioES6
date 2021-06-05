@@ -1,44 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"/>
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <header id="cabecalho">
-        <div id="tituloInicial">
-            <p><span style="color:#EC9B69;">Github</span>Search</p>
+    <div class="container">
+        <header class="cabecalho">
+        <div class="tituloInicial">
+            <p><span>Github</span>Search</p>
         </div>
-        <div id="pesquisa">
-            <input type="text" name="nome" placeholder="Digite o usuário..." value="" id="nomeUsuario">
-            <button type="submit" id="btnBusca">
-                <span class="material-icons">
-                search</span>
+        <form action="#" class="formulario">
+        <div class="pesquisa">
+            <input type="text" value="" id="usuario" class="nomeUsuario" name="Pesquisa de usuário" placeholder="Digite o usuário..."/>
+            <button type="submit" class="botao" id="btnBusca">
+                <span class="material-icons">search</span>
             </button>
+            </form>
         </div>
-    </header>
-    <main class="main">
-        <section class="mensagemErro">
-            <p>blalabla</p>
+        </header>
+
+        <main class="main">
+        <section class="corpoDaPlicacao" id="retornaHTML"></section>
+        <section class="usuarioNaoEncontrado" id="usuarioNotFound">
+
         </section>
-        <div>
-            <img id="fotoPerfil" src="" alt="">
-        </div>
-        <div>
-            <h1 id="nome"></h1>
-            <p id="userName"></p>
-            <p id="descricao"></p>
-            <p id="icones"></p>
-        </div>
-    </main>
-        <footer id="footer">
-            Desenvolvido por  <span style="color:#EC9B69;">Aline Alves e Paulo Maciel</span>
+        <section class="" id="notFound"></section>
+
+        </main>
+
+        <footer class="footer">
+        Desenvolvido por<span>Aline Alves e Paulo Maciel</span>
         </footer>
-</body>
+
+    </div>
+    </body>
+    <script src="js/app.js"></script>
 </html>
