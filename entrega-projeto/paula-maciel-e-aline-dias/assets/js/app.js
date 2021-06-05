@@ -73,5 +73,38 @@ const criarCardUsuario = (nomeUsuario) => {
     </div>
     </div>
 `;
-
 }
+const getUsuarioRepos = async (nomeUsuario) => {
+    try {
+        const rotaApi = await fetch(`https://api.github.com/users/${nomeUsuario}/repos`)
+        if (rotaApi.status === 404) {
+        throw new Error();
+        }
+        const informacoesDoUsuario = await rotaApi.json();
+        retornoHtml.innerHTML += criarListaReposUsuario(informacoesDoUsuario)
+    } catch {
+        retornoHtml.innerHTML = 'Usuario não encontrado';
+    }
+    }
+
+    const criarListaReposUsuario = (value) => {
+    let htmlRepo = '';
+    if (value.length != 0) {
+        htmlRepo += '<div class="cards">';
+        for (let i = 0; i < value.length; i++) {
+        htmlRepo += `<div class="card__repo">
+                        <h1 class="tituloRepo">${value[i].name}</h1>
+                        <p class="descricaoRepo">${value[i].description ? value[i].description : ' '}</p>
+                    <div class="bolinha">${value[i].language ? value[i].language : ' '}</div>
+                    <div class="estrelinha">
+                    <span class="material-icons corEstrelinha">star_border</span>
+                    ${value[i].forks}</div>
+                </div>`;
+        }
+        htmlRepo += '</div>';
+        return htmlRepo;
+    } else {
+        htmlRepo += `<p>Não tem repositórios públicos ainda.</p>`
+        return htmlRepo;
+    }
+    }

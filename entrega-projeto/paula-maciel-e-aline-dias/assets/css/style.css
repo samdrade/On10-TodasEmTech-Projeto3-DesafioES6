@@ -2,13 +2,13 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-body{
+body {
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     background-color: #e5e5e5;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -35,8 +35,8 @@ body{
 }
 
 .pesquisa {
-    width:300px;
-    height:42px;
+    width: 300px;
+    height: 42px;
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
@@ -48,33 +48,33 @@ body{
     margin-right: 25px;
 }
 
-.nomeUsuario{
+.nomeUsuario {
     width: 90%;
     border: none;
     outline: none;
-    font-size:14px;
-    height:18px;
+    font-size: 14px;
+    height: 18px;
 }
 
-.botao{
+.botao {
     padding-bottom: 25px;
     background-color: #ffffff;
     height: 14px;
     border: none;
     outline: none;
 }
-.main{
+.main {
     display: flex;
-    flex-direction:column;
-    align-items:center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.mensagemErro{
-    display:block;
+.mensagemErro {
+    display: block;
 }
 
-.card__user{
-    color:#313131;
+.card__user {
+    color: #313131;
     background-color: none;
     text-align: left;
     display: flex;
@@ -82,12 +82,12 @@ body{
     align-items: center;
 }
 
-.user__card{
+.user__card {
     width: 252px;
 }
 
 .user__name {
-    color:#ec9b69;
+    color: #ec9b69;
 }
 
 .user__username {
@@ -99,8 +99,8 @@ body{
 }
 
 .followersRepos {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .badge {
@@ -141,10 +141,10 @@ flex-direction: row;
     margin-top: 30px;
 }
 
-.tituloNaoEncontrado{
-color: #ec9b69;
-font-size: 48px;
-margin-bottom: 0px;
+.tituloNaoEncontrado {
+    color: #ec9b69;
+    font-size: 48px;
+    margin-bottom: 0px;
 }
 
 .pesquiseNovamente {
@@ -156,10 +156,67 @@ margin-bottom: 0px;
 }
 
 .imagemNaoEncontrado {
-margin-top: 0px;
+    margin-top: 0px;
 }
 
-.footer{
+.cards {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: revert;
+    min-width: 800px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.corpoDaPlicacao {
+    display: flex;
+    width: 1270px;
+    justify-content: center;
+}
+
+.card__repo {
+    height: 200px;
+    display: block;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    float: left;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 7px #b1b1b1;
+}
+
+.tituloRepo {
+    text-align: left;
+}
+
+.descricaoRepo {
+    text-align: left;
+}
+
+.estrelinha {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.corEstrelinha{
+    color: #FFD813;
+}
+
+.publicRepos {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer {
     text-align: center;
     color: #313131;
     display: flex;
@@ -171,9 +228,9 @@ margin-top: 0px;
 
 .footer span {
     color: #ec9b69;
-    margin-left:9px;
+    margin-left: 9px;
 }
 
-footer span{
+footer span {
     font-weight: bold;
 }
