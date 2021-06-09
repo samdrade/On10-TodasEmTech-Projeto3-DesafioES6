@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GithubSearch</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header-titulo">
+        Github<span class="titulo-span">Search</span>
+      </h1>
+      <div class="div-form">
+        <form class="form" id="form">
+          <input
+            class="input"
+            id="input"
+            placeholder="Digite o usuário..."
+            autocomplete="off"
+          />
+          <button class="submit" id="submit">
+            <span class="material-icons">search</span>
+          </button>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <card class="card-main" id="card-main">
+        <div class="div1-card">
+          <img src="" alt="" class="img-card" id="img-card" />
+          <h3 class="nome-usuario" id="nome-usuario"></h3>
+          <p class="nickname" id="nickname"></p>
+        </div>
+        <div class="div2-card">
+          <p class="resumo-usuario" id="resumo-usuario"></p>
+          <div class="sub-div2">
+            <div id="sub1-sub-div2">
+              <span class="material-icons" id="span1"></span>
+              <p class="num-seguidores" id="num-seguidores"></p>
+            </div>
+            <div id="sub2-sub-div2">
+              <span class="material-icons" id="span2"></span>
+              <p class="num-repositorios" id="num-repositorios"></p>
+            </div>
+          </div>
+        </div>
+      </card>
+
+      <div id="div-erro">
+        <h2 id="titulo-erro"></h2>
+        <p id="paragrafo-erro"></p>
+        <img id="img-erro" />
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer-p">
+        Desenvolvido por
+        <span class="footer-span"
+          ><a href="https://github.com/dianamartine" target="_blank"
+            >Diana Martine</a
+          ></span
+        >
+        e
+        <span class="footer-span"
+          ><a href="https://github.com/jumara-pimenta" target="_blank"
+            >Jumara Pimenta</a
+          ></span
+        >
+      </p>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
