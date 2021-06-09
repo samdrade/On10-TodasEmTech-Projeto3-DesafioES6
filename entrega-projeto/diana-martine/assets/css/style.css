@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+/* Header e input */
+.header {
+  background-color: #ffffff;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header-titulo {
+  color: purple;
+}
+
+.header-titulo,
+h1,
+span {
+  background-color: transparent;
+}
+
+.titulo-span {
+  color: #313131;
+}
+
+.div-form {
+  border: solid 1px #bebebe;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  background-color: white;
+}
+
+.form {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  background: transparent;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.submit {
+  border: none;
+  background: transparent;
+}
+
+.submit:hover {
+  color: purple;
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88.5%;
+}
+
+/* 1- Main Card */
+.card-main {
+  max-height: 500px;
+}
+
+.img-card {
+  width: 100%;
+  max-height: 254px;
+  border-radius: 8px;
+}
+
+.nome-usuario {
+  color: purple;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+.nickname {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9a9a9a;
+  padding-bottom: 15px;
+}
+
+.resumo-usuario {
+  font-size: 14px;
+  color: #9a9a9a;
+  padding-bottom: 10px;
+}
+
+.sub-div2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-height: 35px;
+}
+
+.sub-sub-div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  max-height: 30px;
+  border-radius: 6px;
+  margin: 2px;
+  color: purple;
+  background-color: white;
+}
+
+.sub-sub-div2 p {
+  background-color: transparent;
+  color: #9a9a9a;
+  padding-left: 4px;
+}
+
+/* 2- Main Div de usuário não encontrado */
+.div-erro {
+  padding-top: 100px;
+  height: 100%;
+  text-align: center;
+}
+
+.titulo-erro {
+  color: purple;
+  font-size: 40px;
+}
+
+.paragrafo-erro {
+  font-size: 25px;
+  font-weight: bold;
+  color: #9a9a9a;
+}
+
+.img-erro {
+  width: 70%;
+}
+
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  font-weight: bold;
+}
+
+.footer-p {
+  color: #9a9a9a;
+  background-color: transparent;
+}
+
+.footer-span a {
+  color: purple;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.footer-span a:hover {
+  font-size: 17px;
+  color: #313131;
+}
