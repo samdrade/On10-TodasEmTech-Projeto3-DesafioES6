@@ -1,3 +1,4 @@
+
 // URL da API
 const baseURL = "https://api.github.com/users/gabrielacsalesc";
 
@@ -21,6 +22,7 @@ form.addEventListener('submit', (event) => {
     alert('Informe o nome do personagem');
   }
 })
+
 
 function replaceNome(nome){
   let nomeModificado = ''

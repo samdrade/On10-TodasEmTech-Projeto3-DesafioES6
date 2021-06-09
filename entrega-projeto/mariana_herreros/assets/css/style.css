@@ -1,0 +1,207 @@
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.container-input {
+    border: 1px solid black;
+    width: 450px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.input {
+    border: none;
+    outline: none;
+    width: 20%;
+    padding: 8px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #ece8e8;
+    font-family: 'Quicksand', sans-serif;
+    color: #EC9B69;
+    height: 900px;
+    width: 100%;
+}
+
+#imagem {
+    display: flex;
+    justify-content: center;
+    width: 252px;
+    border-radius: 8px;
+    margin-top: 100px;
+}
+
+#login {
+    font-weight: bold;
+    font-size: 14px;
+    color: #313131;
+}
+
+#bio {
+    color: #313131;
+    width: 300px;
+}
+
+#followers, #public_repos {
+    color: #313131;
+    font-weight: bold;
+}
+
+.divisoes {
+    display: flex;
+    align-items: center;
+}
+
+.sub-divisao1, .sub-divisao2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    width: 66px;
+    height: 40px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+#span1, #span2 {
+    margin-right: 10px;
+}
+
+.rodape {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 17.5px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.by {
+    font-weight: bold;
+    color: #EC9B69;
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        max-width: 768px;
+    }
+    .container-input {
+        width: 250px;
+        display: flex;
+    }
+    .mensagemErro img {
+        width: 500px;
+        margin-right: 50px;
+    }
+    .input {
+        width: 80%;
+        padding: 0px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    .btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 700px;
+    }
+
+    #imagem {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+
+    .card {
+        margin-left: 70px;
+    }
+
+    .sub-divisao1, .sub-divisao2 {
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .logo-git {
+        height: 30px;
+    }
+    .navegacao {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form {
+        width: 150px;
+    }
+    .container-input {
+        width: 120px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .input {
+        border: none;
+        outline: none;
+        width: 60%;
+        padding: 0px;
+        margin-top: 5px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    .btn {
+        background-color: transparent;
+        border: none;
+        margin-left: 2px;
+        margin-top: 10px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 700px;
+    }
+    .rodape {
+        padding: 0;
+        margin-bottom: auto;
+    }
+    .mensagemErro img {
+        width: 300px;
+        margin-right: 70px;
+    }
+    #imagem {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .card {
+        margin-left: 80px;
+    }
+    .sub-divisao1, .sub-divisao2 {
+        height: 20px;
+    }
+}
