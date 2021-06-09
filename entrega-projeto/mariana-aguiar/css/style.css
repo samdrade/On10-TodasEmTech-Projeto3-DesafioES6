@@ -1,0 +1,124 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    --main-color: #ec9b69;
+    background-color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    color: var(--main-color);
+}
+
+input{
+    margin-right: 1rem;
+    border-radius: 8px;
+    padding: 12px 11px;
+    border: 1px solid #bebebe;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+ul{
+    list-style-type: none;
+    margin: auto;
+}
+
+li{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 4px;
+
+}
+.titulo{
+    font-weight: 700;
+    font-style: bold;
+    font-size: 32px;
+    line-height: 1px;
+    color: var(--main-color);
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.btn__search{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;  
+    background-color: #ffffff;  
+    width: 700px;
+}
+
+.span{
+    color: var(--main-color);
+}
+
+.span-titulo{
+    color: black;
+}
+
+.span-1{
+    opacity: 0.5;
+    color: #313131;
+}
+
+.profile, .errorMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    color:#313131;
+    font-size: 12px;
+    width: 50%;
+}
+
+.user__image{
+    border-radius: 8px;
+    width: 100px;
+    right: 0;
+    left:0;
+    top: 30vh;
+    transform: translateY(-20%);
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.errorMessage{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.errorMessage__titulo{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.errorMessage__paragrafo{
+    color:#313131;
+    opacity: 0.5;
+    text-align: center;
+}
+
+footer{
+    background-color: #ffffff;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
