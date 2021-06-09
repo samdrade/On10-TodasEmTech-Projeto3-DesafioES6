@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: 'Quicksand', sans-serif;
+}
+.header{
+    background-color: #ffffff;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+
+}
+.header-titulo{
+    color: #EC9B69;
+}
+.titulo-span{
+ color: #313131;
+}
+.div-form{
+    border: solid 1px #bebebe;
+    border-radius: 8px;
+    width: 403px;
+    height: 42px;
+}
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.input{
+    border: none;
+    outline: none;
+    
+}
+.submit{
+    border: none;
+    height: 18px;
+    width: 18px;
+    background: transparent;  
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    
+}
+.card-main{
+    width: 200px;
+    position:absolute;
+    bottom: 20%;
+
+}
+.img-card{
+    width: 100%;
+    position: relative;
+    max-height: 254px;
+    border-radius: 8px;
+}
+.nome-usuario{
+    color:#EC9B69;
+    font-size: 25px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+.nickname{
+    margin-top: 0;
+    font-weight: bolder;
+    color: #9a9a9a;
+}
+.resumo-usuario{
+    color: #9a9a9a;
+    font-size: 15px;
+}
+.sub-div2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+    margin-top: 20px;
+}
+.sub-sub-div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    background-color: #ffffff;
+    max-height: 100%;
+    margin: 4px;
+    border-radius: 2px;
+}
+.sub-sub-div2 span{
+    color:#EC9B69;
+    font-size: 18px;
+}
+.sub-sub-div2 p{
+    color: #9a9a9a;
+    font-weight: bolder;
+    padding: 4px;
+    font-size: 14px;
+}
+/* Div Erro */
+.div-erro{
+    text-align: center;
+    padding: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.titulo-erro{
+    color:#EC9B69;
+    font-size: 30px;
+    line-height: 10px;
+}
+.messagemErro{
+    color: #9a9a9a;
+    font-weight: bolder;
+    font-size: 20px; 
+    line-height: 5px;
+}
+.imagem-erro{
+    max-width: 100%;  
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+}
+.footer-p{
+    color: #313131;
+}
+.footer-span{
+    color:#EC9B69;
+}
